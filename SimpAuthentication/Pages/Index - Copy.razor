@@ -1,0 +1,18 @@
+﻿@page "/tempxx"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<AuthorizeView Roles="Admin,User">
+    <Authorized>
+        <p>You can only see this if you're an admin or superuser.</p>
+
+        <SecretComp />
+    </Authorized>
+
+</AuthorizeView>
+
+
+
+
